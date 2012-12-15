@@ -14,4 +14,4 @@ api = twitter.Api(consumer_key=consumer_key,
 
 
 def getTweets(query=None):
-    return map((lambda tweet: tweet.AsDict()), api.GetSearch(term='NHL'))
+    return map((lambda tweet: tweet.AsDict()), api.GetSearch(term=query))
